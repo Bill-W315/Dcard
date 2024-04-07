@@ -2,10 +2,10 @@
 Backend Intern Assignment
 
 設計圖:
-
+![Alt text](https://github.com/Bill-W315/Dcard/blob/main/Dcard.png)
 
 壓力測試圖:
-
+![Alt text](https://github.com/Bill-W315/Dcard/blob/main/loadTest.png)
 
 設計想法:
 Backend Intern Assignment中的Public API由於有10,000個RPS的效能要求，所以降低IO時間跟搜尋時間會是主要目標，變數為查詢參數，選擇單層cache機制，key為條件參數組合，value為符合條件的資料，實作以Redis作為cache的工具，Database只負責儲存所有廣告。
